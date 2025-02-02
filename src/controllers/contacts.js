@@ -10,15 +10,6 @@ import createHttpError from 'http-errors';
 export const getAllContactsController = async (req, res) => {
   const contacts = await getAllContacts();
 
-  if (contacts.length === 0) {
-    res.status(404).json({
-      status: 404,
-      message: 'Not found',
-      error: 'No contacts found',
-    });
-    return;
-  }
-
   res.status(200).json({
     status: 200,
     message: 'Successfully found all contacts',

@@ -15,7 +15,6 @@ const setupServer = () => {
     }),
   );
 
-  app.use;
   app.use(
     pino({
       transport: {
