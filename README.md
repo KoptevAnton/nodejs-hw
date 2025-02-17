@@ -8,3 +8,4 @@
 |  2  | Express. The basics of MongoDB                      | [hw2-mongodb](https://github.com/KoptevAnton/nodejs-hw/tree/hw2-mongodb)       |
 |  3  | Code organization. REST API                         | [hw3-crud](https://github.com/KoptevAnton/nodejs-hw/tree/hw3-crud)             |
 |  4  | Data Validation, Pagination, Sorting, and Filtering | [hw4-validation](https://github.com/KoptevAnton/nodejs-hw/tree/hw4-validation) |
+|  5  | Authentication and authorization                    | [hw5-auth](https://github.com/KoptevAnton/nodejs-hw/tree/hw5-auth)             |

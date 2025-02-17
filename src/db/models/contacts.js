@@ -1,4 +1,6 @@
 import { model, Schema } from 'mongoose';
+import { emailRegexp } from '../../constants/users.js';
+import { contactTypesList } from '../../constants/contacts.js';
 
 const contactsSchema = new Schema(
   {
@@ -13,7 +15,7 @@ const contactsSchema = new Schema(
     email: {
       type: String,
       required: false,
-      match: [/\S+@\S+\.\S+/, 'is invalid'],
+      match: [emailRegexp, 'is invalid'],
     },
     isFavourite: {
       type: Boolean,
@@ -21,9 +23,14 @@ const contactsSchema = new Schema(
     },
     contactType: {
       type: String,
-      enum: ['home', 'personal', 'work'],
+      enum: contactTypesList,
       required: true,
       default: 'personal',
+    },
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: 'users',
+      required: true,
     },
   },
   {
