@@ -24,7 +24,7 @@ export const loginUser = async (payload) => {
 
   const isEqual = await bcrypt.compare(payload.password, user.password);
 
-  if (isEqual) throw createHttpError(401, 'Unauthorized');
+  if (!isEqual) throw createHttpError(401, 'Unauthorized');
 
   await SessionsCollection.deleteOne({ userId: user._id });
 
