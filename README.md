@@ -10,3 +10,4 @@
 |  4  | Data Validation, Pagination, Sorting, and Filtering | [hw4-validation](https://github.com/KoptevAnton/nodejs-hw/tree/hw4-validation)             |
 |  5  | Authentication and authorization                    | [hw5-auth](https://github.com/KoptevAnton/nodejs-hw/tree/hw5-auth)                         |
 |  6  | Email and images                                    | [hw6-email-and-images](https://github.com/KoptevAnton/nodejs-hw/tree/hw6-email-and-images) |
+|  7  | Swagger and OpenAPI                                 | [hw7-swagger](https://github.com/KoptevAnton/nodejs-hw/tree/hw7-swagger)                   |
